@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pay Rajdeep Maji</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    img {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      margin: 15px 0;
+      border-radius: 10px;
+    }
+    .upi-id {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #333;
+      word-wrap: break-word;
+    }
+    button {
+      background: #34a853;
+      color: white;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2c8b45;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Pay Rajdeep Maji</h2>
+    <p>Scan QR or copy UPI ID to pay</p>
+    <img src="qr.png" alt="UPI QR Code">
+    <div class="upi-id">UPI ID: itzraj1998@okaxis</div>
+    <button onclick="copyUPI()">Copy UPI ID</button>
+  </div>
+
+  <script>
+    function copyUPI() {
+      navigator.clipboard.writeText("itzraj1998@okaxis").then(() => {
+        alert("UPI ID copied: itzraj1998@okaxis");
+      });
+    }
+  </script>
+</body>
+</html>
